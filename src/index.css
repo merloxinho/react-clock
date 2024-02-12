@@ -1,0 +1,49 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-sizing: content-box;
+  overflow:hidden;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  background: rgb(111,0,255);
+  background: radial-gradient(circle, rgba(111,0,255,1) 0%, rgba(0,0,0,1) 75%);
+}
+.blur{
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  backdrop-filter:  brightness(30%) blur(100px);
+}
+.clock-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+.clock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+span{
+  width: 90vw;
+  font-size:5vw;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
